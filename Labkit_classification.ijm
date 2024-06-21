@@ -24,7 +24,7 @@ for (i=2; i<number_of_files; i++) {
 	
 	//image min max normalization
 	getMinAndMax(min, max);
-	run("32-bit");/run/user/3966/gvfs/smb-share:server=storage.fht.org,share=imganfac/neurogenomics/harschnitz/Elisa_Colombo/pipeline_final/step_1_preprocessing.ijm
+	run("32-bit");
 	run("Subtract...", "value="+min);
 	run("Divide...", "value="+(max - min));
 
@@ -39,3 +39,5 @@ for (i=2; i<number_of_files; i++) {
 	save(output_dir + File.separator + "classified_" + filename_only + ".tif");
 	close("*");
 }
+
+print("pipeline complete");
