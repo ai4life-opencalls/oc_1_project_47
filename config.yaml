@@ -6,4 +6,4 @@ y_pad: 50
 raw_data_folder: 'raw_data'
 classifications_folder: 'output/2D_class_new'
 cl3D_filename: 'models/scen_3D.cl'
-output_folder: 'output_script'
+output_folder: 'output_script_test'
