@@ -153,7 +153,7 @@ for filenum in range(0, len(files)):
             print('starting 2D nuclear segmentation')
             im_to_segment = np.amax(raw_im[nuclei_channel, :, :], axis=0)
             nuclei_im, flows, styles, diams = model.eval(im_to_segment, diameter=20, flow_threshold=None)
-            skimage.io.imsave(single_output_folder + os.path.sep + filename + 'segmented_nuclei.tif', nuclei_im, check_contrast=False)
+            skimage.io.imsave(single_output_folder + os.path.sep + filename + '_segmented_nuclei.tif', nuclei_im, check_contrast=False)
 
         #erode and dilate the classified image
         eroded_lab_image = np.copy(classified_im)
