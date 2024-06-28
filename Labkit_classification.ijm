@@ -2,9 +2,9 @@
 
 #@ File (label = "Input folder", style = "directory") input_dir
 #@ File (label = "Output folder for segmentation", style = "directory") output_dir
-#@ File (label = "LabKit classifier", style = "file") cilia_classifier
+#@ File (label = "LabKit classifier", style = "file") senescence_classifier
 
-
+ 
 file_list = getFileList(input_dir)
 number_of_files = file_list.length;
 for (i=2; i<number_of_files; i++) {
@@ -31,7 +31,7 @@ for (i=2; i<number_of_files; i++) {
 	//save(output_dir + File.separator + "normalized_" + filename_only + ".tif");
 	print("pre-processing done, starting classification");
 	//labkit stuff
-	run("Segment Image With Labkit", "input=Composite segmenter_file=" + cilia_classifier + " use_gpu=true");
+	run("Segment Image With Labkit", "input=Composite segmenter_file=" + senescence_classifier + " use_gpu=true");
 	rename("classified_image");
 	
 	print("Classification complete, saving files");
