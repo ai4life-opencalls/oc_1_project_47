@@ -1,7 +1,7 @@
 
 
 #@ File (label = "Input folder", style = "directory") input_dir
-#@ File (label = "Output directory for segmentation", style = "directory") output_dir
+#@ File (label = "Output folder for segmentation", style = "directory") output_dir
 #@ File (label = "LabKit classifier", style = "file") cilia_classifier
 
 
