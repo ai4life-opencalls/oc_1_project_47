@@ -5,6 +5,9 @@
 </p>
 
 
+[![DOI](https://zenodo.org/badge/820917010.svg)](https://zenodo.org/doi/10.5281/zenodo.12592907)
+
+
 # Project 47: Automated Detection and Quantification of Senescent Cells
 
 A collaboration with Ana Filipa Pombinho Isidroe at Universidade de Lisboa. 
